@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Jae Woo Ok</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="top-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+  <h1 class="project1-title">Autonomous Veichle Driving Prototype</h1>
+
+  <div class="projects-wrapper">
+    <p class="project1-name"> Input Image </p>
+    <img class="project-art" src="images/step0.JPG" alt="step0_Pic">
+    <div class="project-description">
+      <p> The goal of the Canny Edge Algorithm is to have a color image input and output <br>
+        a black and white image of only the edges of the picture remaining. This algorithm <br>
+        is useful for autonomous driving because once the edges of the image are found, the most <br>
+        significant lines in the image (the edges of the road) can be detected using the Hough Transform. <br>
+        The goal of the project was to take individual frames of the road from a video stream and output <br>
+        images that detected the edges of the road. To test the functionality, an image of train tracks <br>
+        were used for its similarity to road edges. </p>
+    </div>
+  </div>
+
+  <div class="about-background">
+  <div class="projects-wrapper">
+    <p class="project1-name"> Canny Edge Algorithm Output </p>
+    <img class="project-art" src="images/step5.JPG" alt="step5_Pic">
+    <div class="project-description">
+      <p> This is the output of the Canny Edge Algorithm. The Canny Edge Algorithm has 5 filters. The first<br>
+         filter turns the color image into grayscale. Then the Gaussain filter blurs the image using a matrix <br>
+         (5x5 in this implementation). Then, the Sobel filter calculates the gradients using a 3x3 matrix.<br>
+         The 4th step is to fix the white lines so they are not as thick through non-maximum suppression. <br>
+         Finally, Hysteresis will keep the pixel if the pixel exceeds the high threshold or if a pixel exceeds <br>
+         the low threshold value and there is one adjacent pixel.</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="projects-wrapper">
+    <p class="project1-name"> Hough Transform Output </p>
+    <img class="project-art" src="images/step6.JPG" alt="step6_Pic">
+    <div class="project-description">
+      <p> This is the output of the Hough Transform. The Hough Transform has 4 steps. The first one is to use <br>
+        an accumulator to determine the weights of the lines. The Accumulaton indicates all the lines on the image <br>
+        and represents them in a polar coordinate system. For each pixel, there can be 180 different lines, so it <br>
+        calculates the distance to the central pixel 180 times and adds 1 for the corresponding unit in accumulator.<br>
+        The next step is to loop over accumulator to get all points whose value is higher than a certain “threshold”<br>
+        value. Then, the finite lines component takes rho and theta value from threshold and converts into endpoints<br>
+        of lines in rectangular coordinate system. Finally, the algorithm calculates points on the line and prints <br>
+        a red pixel for every point </p>
+    </div>
+  </div>
+
+  <div class="about-background">
+  <div class="projects-wrapper">
+    <p class="project1-name"> Block Diagram </p>
+    <img class="project-art" src="images/blockdiagram.JPG" alt="blockdiagram_Pic">
+    <div class="project-description">
+      <p> The block diagram shows this process from the input image to the final output image. There is a FIFO in-between<br>
+         every block so that each pixel can be pipelined for better performance.</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="projects-wrapper">
+    <p class="project1-name"> Synthesis Results </p>
+    <img class="project-art" src="images/synthesisresults.JPG" alt="synthesisresults_Pic">
+    <div class="project-description">
+      <p> These are the synthesis results from Quartus II. Our logic utilization was 34688/41910 which was 83%, <br>
+        our total registers used was 30,849, our total pins was 66/214 (21%), and the total memory blocks used <br>
+        was around 10%.</p>
+    </div>
+  </div>
+
+  </main>
+</body>
+</html>
