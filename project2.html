@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Jae Woo Ok</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="top-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+  <h1 class="project2-title">Finger Cursor using MATLAB</h1>
+
+  <div class="projects-wrapper">
+    <video class="project2-vid" width="600" height="400" controls>
+      <source src="images/me_using_the_program.mp4" type="video/mp4">
+      <source src="images/me_using_the_program.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+    </video>
+    <div class="project2-description">
+      <p> This is a video of me using the program to control the mouse using the webcam on my laptop computer tracking my finger. The program starts by opening the webcam and setting its resolution to 640x480. The webcam I used was the ‘integrated webcam’ in my laptop (Model Dell XPS15) and so I picked the resolution that best fit my webcam screen. Next, I took two pictures of my hand in a gun-shape and turned them black and white. These two pictures were used in my 2D-Histogram program (used in MP4) and the output was stored. The program goes through 300 frames of streamed video. Each iteration of the loop goes through one frame of the video.  Each frame was first converted into grayscale. If there was more than 1 color band of the grayscale image, I made sure to only take the green channel. Then, I used my color segmentation program and the output of the 2D-Histogram and turned the image into a completely black and white image. Now I needed a way to actually draw the bounding boxes. This was done using the built in MATLAB function ‘regionprops(img, parameter)’ so that a red bounding box was drawn around my hand and finger. Then by using the coordinates of the bounding box, I was able to control the mouse input, effectively controlling the mouse with my finger. </p>
+    </div>
+  </div>
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,238 @@
+main {
+  margin-top: 80px;
+  margin-left: 2em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Index Page */
+div.index-background{
+    background-image:url('images/Background_Image.jpeg');
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+}
+
+.index-name{
+  font-family: sans-serif;
+  color: white;
+  font-size: 130px;
+  text-align: center;
+  margin-top: 250px;
+  margin-bottom: 0px;
+}
+
+.index-description{
+  font-family: sans-serif;
+  color: white;
+  font-size: 30px;
+  margin-left: 720px;
+  margin-top: 0px;
+  margin-bottom: 100px;
+}
+
+.project-button{
+  font-family: sans-serif;
+  color: white;
+  font-size: 30px;
+  margin-top: 0px;
+  margin-left: 610px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 1em 1.5em;
+}
+
+.project-button:hover{
+  background-color: grey;
+}
+
+h1{
+  margin-top: 400px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.projects-wrapper {
+	height: 400px;
+	width: 100%;
+	margin-top: 0px;
+  margin-left: 10px;
+}
+
+.project-name {
+  font-family: sans-serif;
+  color: black;
+  font-size: 25px;
+	margin-top: 0px;
+	margin-bottom: 3;
+  margin-left: 50px;
+}
+
+.project-art {
+  margin-left: 0px;
+	height: 300px;
+	width: 500px;
+  float: left;
+}
+
+.project-description {
+  font-size: 20px;
+  margin-left: 50px;
+  float: left;
+}
+
+/* Navigation bar */
+nav.top-nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  box-shadow: 0px 4px 4px #0003;
+  padding-left: 2em;
+  background-color: black;
+}
+
+nav.top-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav.top-nav li {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #fffd;
+  margin: 3px 135px 3px 135px;
+  display: inline-block;
+  padding: 2px;
+  user-select: none;
+  position: relative;
+  font-size: 20px;
+}
+
+nav.top-nav a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav.top-nav a:hover {
+  color: grey;
+}
+
+nav.top-nav a:active {
+  color: grey;
+}
+
+
+/* About Page */
+.about-background{
+  background-color: #EDEDED;
+}
+
+.about-title{
+  margin-top: 0px;
+  padding-top: 2em;
+}
+
+p.About-Body {
+  font-family: sans-serif;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+  margin: 0px 360px 80px 360px;
+  color: black;
+}
+
+.About-Art{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 330px;
+  width: 250px;
+  padding-bottom: 2em;
+}
+
+.contact-title{
+  margin-top: 0px;
+  padding-top: 2em;
+}
+
+/* Contact Page */
+p.Contact-Body {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 0px;
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+}
+
+/* Resume Page */
+#resume-body {
+  background: white;
+}
+
+.resume-title {
+  margin-top: 0px;
+}
+
+h2{
+  font-family: sans-serif;
+}
+
+h2.education{
+  margin-top: 110px;
+}
+
+.resume-intro1{
+  float: left;
+}
+
+.resume-intro2{
+  float: right;
+}
+
+/* Project 1 Page */
+.project1-title{
+  margin-top: 20px;
+}
+
+.project1-name{
+  font-family: sans-serif;
+  color: black;
+  font-size: 25px;
+	margin-top: 30px;
+	margin-bottom: 3;
+  margin-left: 0px;
+  padding-top: 1em;
+}
+
+/* Project 2 Page */
+.project2-title{
+  margin-top: 20px;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.project2-vid{
+  margin-left: 435px;
+  font-size: 0px;
+  padding: 0px;
+}
+
+.project2-description{
+  font-size: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
